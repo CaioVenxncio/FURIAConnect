@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Editar perfil de fã no FURIA Connect. Atualize suas informações pessoais, redes sociais e preferências." />
+  <title>Editar Perfil - FURIA Connect</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="/assets/Furia_Esports_Logo.png" alt="Logo da FURIA" class="logo" />
+    <h1>Editar seu Perfil no FURIA Connect</h1>
+    <p>Atualize suas informações de fã abaixo:</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="edit-form">
+        <!-- Nome e Idade -->
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <label for="edit-nome">Nome:</label>
+          <input type="text" id="edit-nome" name="edit-nome" required placeholder="Digite seu nome completo" />
+
+          <label for="edit-idade">Idade:</label>
+          <input type="number" id="edit-idade" name="edit-idade" required min="13" max="120" placeholder="Digite sua idade" />
+        </fieldset>
+
+        <!-- Localização e Time Favorito -->
+        <fieldset>
+          <legend>Preferências e Localização</legend>
+          <label for="edit-localizacao">Localização (Cidade/Estado):</label>
+          <input type="text" id="edit-localizacao" name="edit-localizacao" required placeholder="Cidade e estado" />
+
+          <label for="edit-time-favorito">Qual sua line favorita da FURIA?:</label>
+          <select id="edit-time-favorito" name="edit-time-favorito" required>
+            <option value="" disabled selected>Escolha um</option>
+            <option value="csgo">CS:GO</option>
+            <option value="valorant">Valorant</option>
+            <option value="lol">League of Legends</option>
+            <option value="rocketleague">Rocket League</option>
+            <option value="kingsleague">Kings League</option>
+            <option value="outro">Outro</option>
+          </select>
+        </fieldset>
+
+        <!-- Redes Sociais -->
+        <fieldset>
+          <legend>Redes Sociais</legend>
+          <label for="edit-rede-social">Rede social favorita:</label>
+          <select id="edit-rede-social" name="edit-rede-social" required>
+            <option value="" disabled selected>Escolha uma</option>
+            <option value="instagram">Instagram</option>
+            <option value="twitter">Twitter/X</option>
+            <option value="tiktok">TikTok</option>
+            <option value="youtube">YouTube</option>
+            <option value="outra">Outra</option>
+          </select>
+
+          <label for="edit-instagram">Instagram (link ou nome de usuário):</label>
+          <input type="text" id="edit-instagram" name="edit-instagram" placeholder="Exemplo: @usuario" />
+
+          <label for="edit-twitter">Twitter:</label>
+          <input type="text" id="edit-twitter" name="edit-twitter" placeholder="Exemplo: @usuario" />
+
+          <label for="edit-facebook">Facebook:</label>
+          <input type="text" id="edit-facebook" name="edit-facebook" placeholder="Exemplo: facebook.com/usuario" />
+        </fieldset>
+
+        <!-- Frequência -->
+        <fieldset>
+          <legend>Frequência de Acompanhamento</legend>
+          <label for="edit-frequencia">Com que frequência você acompanha a FURIA?</label>
+          <select id="edit-frequencia" name="edit-frequencia" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="sempre">Sempre</option>
+            <option value="frequente">Frequentemente</option>
+            <option value="asvezes">Às vezes</option>
+            <option value="raro">Raramente</option>
+          </select>
+        </fieldset>
+
+        <!-- Botões -->
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Salvar Alterações</button>
+          <button type="button" onclick="window.location.href='perfil.html'" class="btn-cancel">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="/js/editar-perfil.js"></script>
+</body>
+</html>

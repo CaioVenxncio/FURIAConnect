@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FURIA Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/Furia_Esports_Logo.png" alt="Logo da FURIA" class="logo" />
+    <h1>Bem-vindo ao FURIA Connect</h1>
+    <p>Vamos conhecer melhor você, fã da FURIA!</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="fan-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required />
+
+        <label for="localizacao">Localização (Cidade/Estado):</label>
+        <input type="text" id="localizacao" name="localizacao" required />
+
+        <label for="time-favorito">Qual sua line favorita da FURIA?</label>
+        <select id="time-favorito" name="time-favorito" required>
+          <option value="" disabled selected>Escolha um</option>
+          <option value="csgo">CS:GO</option>
+          <option value="valorant">Valorant</option>
+          <option value="lol">League of Legends</option>
+          <option value="rocketleague">Rocket League</option>
+          <option value="kingsleague">Kings League</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="rede-social">Rede social favorita:</label>
+        <select id="rede-social" name="rede-social" required>
+          <option value="" disabled selected>Escolha uma</option>
+          <option value="instagram">Instagram</option>
+          <option value="twitter">Twitter/X</option>
+          <option value="tiktok">TikTok</option>
+          <option value="youtube">YouTube</option>
+          <option value="outra">Outra</option>
+        </select>
+
+        <label for="frequencia">Com que frequência você acompanha a FURIA?</label>
+        <select id="frequencia" name="frequencia" required>
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="sempre">Sempre</option>
+          <option value="frequente">Frequentemente</option>
+          <option value="asvezes">Às vezes</option>
+          <option value="raro">Raramente</option>
+        </select>
+
+        <form id="fan-form">
+            
+            <button type="button" onclick="window.location.href='pages/perfil.html'">Próximo</button>
+          </form>
+          
+
+
+
+
+      </form>
+    </section>
+  </main>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
+
+
