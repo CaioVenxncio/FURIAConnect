@@ -2,87 +2,88 @@
 
 ![](assets/Furia_Esports_Logo.png)
 
-## Descrição
+## Description
 
-FURIA Connect é um protótipo de aplicação web para conhecer e gerenciar informações de fãs da equipe FURIA. Através de um formulário, o fã se cadastra, seus dados são armazenados localmente (LocalStorage) e exibidos em uma página de perfil. O usuário pode editar suas informações e, ao finalizar, ser direcionado para uma loja oficial com produtos e cupons de desconto.
+**FURIA Connect** is a web application prototype designed to gather and manage information about FURIA fans. Through a registration form, fans can sign up, have their data stored locally (via LocalStorage), and view their profile page. Users can edit their information and, upon completion, are redirected to the official store with access to products and discount coupons.
 
-## Funcionalidades
+## Features
 
-- **Cadastro de Fã**: Formulário inicial para coletar nome, idade, localização, preferências de line e redes sociais.
-- **Armazenamento Local**: Uso de LocalStorage para salvar dados do fã sem necessidade de backend.
-- **Perfil do Fã**: Página para visualizar perfil e navegar para edição.
-- **Edição de Perfil**: Formulário pré-preenchido para atualizar dados armazenados.
-- **Loja FURIA**: Página com catálogo de produtos oficiais, cupons e links para redes sociais dos membros.
+- **Fan Registration**: Initial form to collect name, age, location, preferred lineup, and social media links.
+- **Local Storage**: Utilizes LocalStorage to save fan data without a backend.
+- **Fan Profile**: Page to view the registered profile and navigate to edit it.
+- **Profile Editing**: Pre-filled form to update saved data.
+- **FURIA Store**: Page with official product catalog, coupons, and links to players’ social media.
 
-## Estrutura de Pastas
+## Folder Structure
 
 ```
 FURIA-Connect/
 │
-├── assets/               # Logos, imagens de produtos e jogadores
+├── assets/               # Logos, product and player images
 │   └── Furia_Esports_Logo.png
 │
-├── css/                  # Estilos
-│   ├── style.css         # CSS principal para cadastro e edição
-│   ├── profile.css       # CSS para perfil do fã
-│   └── loja.css          # CSS para loja
+├── css/                  # Stylesheets
+│   ├── style.css         # Main CSS for registration and editing
+│   ├── profile.css       # CSS for fan profile page
+│   └── loja.css          # CSS for store page
 │
-├── js/                   # Scripts JavaScript
-│   ├── cadastro.js       # Captura e salva dados do formulário inicial
-│   ├── perfil.js         # Carrega perfil e gerencia edição
-│   └── editar-perfil.js  # Lida com o form de edição de perfil
+├── js/                   # JavaScript scripts
+│   ├── cadastro.js       # Captures and saves form data
+│   ├── perfil.js         # Loads and manages fan profile
+│   └── editar-perfil.js  # Handles the profile editing form
 │
-├── pages/                # Páginas internas
-│   ├── perfil.html       # Exibição de perfil
-│   ├── editar-perfil.html# Edição de perfil
-│   └── loja.html         # Loja de produtos
+├── pages/                # Internal pages
+│   ├── perfil.html       # Fan profile display
+│   ├── editar-perfil.html# Profile editing form
+│   └── loja.html         # Product store
 │
-└── index.html            # Formulário de cadastro inicial
+└── index.html            # Initial registration form
 ```
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - **HTML5**
-- **CSS3** (Flexbox, responsividade)
+- **CSS3** (Flexbox, responsive design)
 - **JavaScript (ES6)**
 - **LocalStorage API**
 
-## Como Executar
+## How to Run
 
-1. Clone este repositório:
+1. Clone this repository:
 
    ```bash
-   git clone https://github.com/seu-usuario/FURIA-Connect.git
+   git clone https://github.com/your-username/FURIA-Connect.git
    ```
 
-2. Abra a pasta do projeto:
+2. Open the project folder:
 
    ```bash
    cd FURIA-Connect
    ```
 
-3. Inicie um servidor local (opcional, mas recomendado) e abra `index.html` no navegador. Por exemplo, usando o VSCode Live Server ou Python:
+3. Start a local server (optional but recommended) and open `index.html` in your browser. For example, using VSCode Live Server or Python:
 
    ```bash
-   # Com Python 3
+   # With Python 3
    python -m http.server 5500
    ```
 
-4. Navegue até `http://localhost:5500` e comece a usar!
+4. Go to `http://localhost:5500` and start using the app!
 
-## Uso
+## Usage
 
-1. Preencha o formulário inicial com suas informações de fã.
-2. Clique em **Próximo** para visualizar seu perfil.
-3. Em **Perfil**, use **Editar Inscrição** para atualizar seus dados.
-4. Após finalizar, clique em **Finalizar Inscrição** para acessar a loja.
-5. Navegue pela loja, adicione produtos ao carrinho e utilize o cupom exibido.
+1. Fill out the initial fan registration form.
+2. Click **Next** to view your profile.
+3. In the **Profile** page, click **Edit Registration** to update your info.
+4. After editing, click **Complete Registration** to access the store.
+5. Browse the store, add products to your cart, and use the provided discount coupon.
 
-## Contribuição
+## Contribution
 
-Contribuições, issues e solicitações de pull são bem-vindas! Sinta-se livre para discutir as mudanças por meio de issues.
+Contributions, issues, and pull requests are welcome! Feel free to discuss proposed changes via issues.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
+
 
